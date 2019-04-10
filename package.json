@@ -1,0 +1,22 @@
+{
+  "name": "databaseproject",
+  "version": "1.0.0",
+  "description": "take 2",
+  "main": "source.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auze217/DatabaseProject.git"
+  },
+  "author": "Austin Zensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auze217/DatabaseProject/issues"
+  },
+  "homepage": "https://github.com/auze217/DatabaseProject#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}

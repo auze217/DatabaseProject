@@ -1,6 +1,0 @@
-version: "3.7"
-services:
-  front-end:
-    image: "auze217/database-project-front-end:latest"
-    ports: 
-      - "3000:3000"
