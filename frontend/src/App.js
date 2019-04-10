@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import cutie from './cute.jpg';
 import './App.css';
+import cutie from './cutie.jpg'
+import SimpleTable from './SimpleTable';
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={cutie} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and poop to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div className="Title">
+            <p>HOT WHEELS BITCHES</p>
+          </div>
+          <div>
+            <img src={cutie} className="App-logo" alt="logo" />
+          </div>  
         </header>
+        <div className="Table">
+          <SimpleTable />
+        </div>
       </div>
     );
   }
