@@ -17,4 +17,3 @@ connection.connect( (err) => {
     }
 })
 }
-export default backEnd;
