@@ -1,5 +1,5 @@
 FROM node:latest
 WORKDIR /
-COPY package.json package-lock.json node_modules source.js backend.js frontend.html ./
+COPY package.json styles.css .dockerignore cutie.jpg source.js backend.js frontend.html ./
 RUN npm install
 CMD ["npm", "start"]
