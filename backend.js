@@ -1,16 +1,13 @@
-var mysql = require('mysql');
+var pg = require('pg');
 
 function backEnd() {
-var connection = mysql.createConnection({
-    host: "localhost",
-    user: "auze217",
-    password: "CuteBoiConner",
-    database: "hotwheelsdb"
-});
-//connecting the db
-connection.connect( (err) => {
+    console.log("got to back end----");
+    var connectionString = "postgres://conner:password@serverName/localhost:5432/hotwheelsdb";
+    var pgClient = new pg.Client(connectionString);
+    //connecting the db
+pgClient.connect( (err) => {
     if (err) {
-        console.log("Error")
+        console.log("Error database not connected!!")
         throw err;
     } else {
         console.log("Database Connected!")

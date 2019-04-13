@@ -4,3 +4,16 @@ services:
     build: .
     ports: 
       - 80:80
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: conner
+      POSTGRES_DB: hotwheelsdb
+    ports:
+        - 5432:5432
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
